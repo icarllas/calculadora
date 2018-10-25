@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">calculadorra</string>
+    <string name="btn_9">7</string>
+    <string name="btn_8">8</string>
+    <string name="btn_7">9</string>
+    <string name="btnclear">clear</string>
+    <string name="btn_6">6</string>
+    <string name="btn_5">5</string>
+    <string name="btn_4">4</string>
+    <string name="btn_mais">+</string>
+    <string name="btn_3">3</string>
+    <string name="btn_2">2</string>
+    <string name="btn_1">1</string>
+    <string name="btnmenos">-</string>
+    <string name="btnmult">x</string>
+    <string name="btn_zero">0</string>
+    <string name="btn_ponto">.</string>
+    <string name="btn_igual">=</string>
+    <string name="btn_divi">/</string>
+
+
+
+
+
+</resources>
