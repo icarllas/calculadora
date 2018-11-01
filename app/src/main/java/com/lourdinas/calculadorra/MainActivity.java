@@ -208,16 +208,46 @@ public class MainActivity extends AppCompatActivity {
         btnigual.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                        "Digite um número!", Toast.LENGTH_LONG).show();
 
                 if(displayConta.getText().equals("")) {
 
                     Toast.makeText(getApplicationContext(),
                             "Digite um número!", Toast.LENGTH_LONG).show();
+                } else {
+                    //operacao = '=':
+                    valor2 = Double.parseDouble(displayConta.getText().toString());
+                    displayConta.setText("");
+                    String resultado  = calcular(valor1, valor2, operacao)
+                    displayresultado.setText(resultado);
                 }
             }
 
         });
 
 
+    }
+    public String calcular(Double valor1, Double valor2, String operacao){
+        Double resultado = 0.0;
+        if (operacao.equals("+")){
+            resultado = valor1 + valor2;
+
+        } else if (operacao.equals("-")){
+            resultado = valor1 - valor2;
+        }else if (operacao.equals("*")){
+            resultado = valor1 * valor2;
+        }else if (operacao.equals("/")){
+            if (valor1 == 0){
+                Toast.makeText(getApplicationContext(),
+                         "NÃO É POSSIVEL DIVIDIR POR 0!", Toast.LENGTH_LONG).show();
+
+            }else {
+                resultado = valor1 / valor2;
+            }
+        }
+
+
+        return resultado.toString();
     }
 }
