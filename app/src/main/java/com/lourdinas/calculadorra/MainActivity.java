@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
                     //operacao = '=':
                     valor2 = Double.parseDouble(displayConta.getText().toString());
                     displayConta.setText("");
-                    String resultado  = calcular(valor1, valor2, operacao)
+                    String resultado  = calcular(valor1, valor2, operacao);
                     displayresultado.setText(resultado);
                 }
             }

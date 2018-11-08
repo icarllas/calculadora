@@ -17,6 +17,11 @@
     <string name="btn_ponto">.</string>
     <string name="btn_igual">=</string>
     <string name="btn_divi">/</string>
+    <string name="btn_login">/</string>
+    <string name="btn_cad">/</string>
+    <string name="btn_salvar">/</string>
+    <string name="btn_ini">/</string>
+    <string name="btn_calc">/</string>
 
 
 
